@@ -11,9 +11,25 @@ include('head.php');
 ?>
 <body>
     <form id="form-productlist" method="post">
-        <?php include('header.php'); ?>
+        <header>
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><?php echo $title; ?></a>
+                    <div class="btn-toolbar">
+                        <button type="button" onclick="window.location.href='addproduct.php';" class="nav-btn">ADD</button>
+                            &emsp;
+                        <button type="submit" class="delete-product-btn">MASS DELETE</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
         <?php include('./index_components/product_list.php'); ?>
-        <?php include('footer.php'); ?>
+
+        <footer>
+            <hr>
+            <p>Scandiweb Test assignment</p>
+        </footer>
     </form>
 </body>
 <?php include('scripts.php'); ?>

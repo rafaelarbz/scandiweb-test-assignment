@@ -18,15 +18,16 @@ html p.notifications, html .validation, body p.notifications, body .validation {
     color: #FFFFFF;
     font-size: 0.8rem;
   }
-  nav a.nav-btn, nav input.nav-btn {
+  nav div.btn-toolbar button.nav-btn, nav div.btn-toolbar button.delete-product-btn {
     font-family: "Montserrat", sans-serife;
     text-transform: uppercase;
     font-size: 0.8rem;
     color: #FFFFFF;
     border-radius: 4px;
     border: solid 1px #FFFFFF;
+    background-color: #010038;
   }
-  nav a.nav-btn:hover, nav input.nav-btn:hover {
+  nav div.btn-toolbar button.nav-btn:hover, nav div.btn-toolbar button.delete-product-btn:hover {
     color: #F39422;
     border: solid 1px #F39422;
   }
@@ -41,15 +42,16 @@ html p.notifications, html .validation, body p.notifications, body .validation {
     color: #FFFFFF;
     font-size: 1rem;
   }
-  nav a.nav-btn, nav input.nav-btn {
+  nav div.btn-toolbar button.nav-btn, nav div.btn-toolbar button.delete-product-btn {
     font-family: "Montserrat", sans-serife;
     text-transform: uppercase;
     font-size: 0.8rem;
     color: #FFFFFF;
     border-radius: 4px;
     border: solid 1px #FFFFFF;
+    background-color: #010038;
   }
-  nav a.nav-btn:hover, nav input.nav-btn:hover {
+  nav div.btn-toolbar button.nav-btn:hover, nav div.btn-toolbar button.delete-product-btn:hover {
     color: #F39422;
     border: solid 1px #F39422;
   }
@@ -64,15 +66,16 @@ html p.notifications, html .validation, body p.notifications, body .validation {
     color: #FFFFFF;
     font-size: 2rem;
   }
-  nav a.nav-btn, nav input.nav-btn {
+  nav div.btn-toolbar button.nav-btn, nav div.btn-toolbar button.delete-product-btn {
     font-family: "Montserrat", sans-serife;
     text-transform: uppercase;
     font-size: 1rem;
     color: #FFFFFF;
     border-radius: 4px;
     border: solid 1px #FFFFFF;
+    background-color: #010038;
   }
-  nav a.nav-btn:hover, nav input.nav-btn:hover {
+  nav div.btn-toolbar button.nav-btn:hover, nav div.btn-toolbar button.delete-product-btn:hover {
     color: #F39422;
     border: solid 1px #F39422;
   }
@@ -88,15 +91,16 @@ html p.notifications, html .validation, body p.notifications, body .validation {
     color: #FFFFFF;
     font-size: 2rem;
   }
-  nav a.nav-btn, nav input.nav-btn {
+  nav div.btn-toolbar button.nav-btn, nav div.btn-toolbar button.delete-product-btn {
     font-family: "Montserrat", sans-serife;
     text-transform: uppercase;
     font-size: 1rem;
     color: #FFFFFF;
     border-radius: 4px;
     border: solid 1px #FFFFFF;
+    background-color: #010038;
   }
-  nav a.nav-btn:hover, nav input.nav-btn:hover {
+  nav div.btn-toolbar button.nav-btn:hover, nav div.btn-toolbar button.delete-product-btn:hover {
     color: #F39422;
     border: solid 1px #F39422;
   }
