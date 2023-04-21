@@ -2,8 +2,6 @@
 include_once('../private/db_connection.php');
 
 //VARIABLES
-$first_btn = "<a type='button' href='addproduct.php' class='btn nav-btn'>Add</a>";
-$second_btn = "<input type='submit' class='btn nav-btn delete-product-btn' value='Mass Delete'>";
 $title = "Product List";
 //END
 
