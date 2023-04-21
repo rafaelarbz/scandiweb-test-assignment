@@ -1,0 +1,12 @@
+@import './variables';
+
+html, body {
+    font-family: $font;
+    background-color: $white;
+
+    p.notifications, .validation {
+        font-family: $font;
+        font-weight: 500;
+        color: $orange;
+    }
+}

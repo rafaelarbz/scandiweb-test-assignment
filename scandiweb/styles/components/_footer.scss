@@ -1,0 +1,56 @@
+@import './variables';
+
+@mixin footer_style($position, $bottom) {
+    position: $position;
+    bottom: $bottom;
+    width: 100%;
+    padding: 1rem;
+}
+
+@mixin p_style($font-size) {
+    text-align: center;
+    font-family: $font;
+    font-size: $font-size;
+    color: $dark-blue;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 0px){
+    footer {
+        @include footer_style(sticky, auto);
+        p {
+            @include p_style($size - 1.2);
+        }
+        hr {
+            color: $dark-blue;
+            border: 0.05rem solid $dark-blue;
+        }
+    }
+}
+
+@media screen and (min-width: 270px){
+    footer {
+        @include footer_style(sticky, auto);
+        p {
+            @include p_style($size - 1);
+        }
+        hr {
+            color: $dark-blue;
+            border: 0.05rem solid $dark-blue;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 770px){
+    footer {
+        @include footer_style(fixed, 0);
+        p {
+            @include p_style($size - 0.6);
+        }
+        hr {
+            color: $dark-blue;
+            border: 0.1rem solid $dark-blue;
+        }
+    }
+}

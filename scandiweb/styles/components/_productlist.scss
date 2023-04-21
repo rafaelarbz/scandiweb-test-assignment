@@ -1,0 +1,240 @@
+@import './variables';
+
+@mixin checkmark_style($color) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: $color;
+    border-radius: 4px;
+}
+
+@mixin checkmark_elements($hover-color, $after-border-color) {
+    &:hover {
+        background-color: $hover-color;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid $after-border-color;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@mixin delete_checkbox_style() {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+@mixin delete_checkbox_elements($checked-color) {
+    &:checked ~ .checkmark {
+        background-color: $checked-color;
+    }
+
+    &:checked ~ .checkmark:after {
+        display: block;
+    }
+}
+
+@mixin card_style($font-size: null) {
+    font-size: $font-size;
+    font-family: $font;
+    align-content: left;
+    outline: solid 1px $blue;
+    color: $blue;
+}
+
+@mixin card_body_style() {
+    font-weight: 500;
+    font-family: $font;
+    text-align: center;
+}
+
+@mixin card_elements() {
+    &:hover {
+        outline: solid 1px $orange;
+        color: $orange;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 376px) {
+    section#product-list {
+        padding: 8rem;
+        div.product-list {
+            div.row-products {
+                div.col-card {
+                    width: 20rem;
+                    .card {
+                        @include card_style($size - 1.4);
+                        @include card_elements();
+                        .card-body {
+                            @include card_body_style();
+
+                            label.container {
+                                text-align: left;
+
+                                .delete-checkbox {
+                                    @include delete_checkbox_style();
+                                    @include delete_checkbox_elements($blue);
+                                }
+                                
+                                .checkmark {
+                                    @include checkmark_style($clear-gray);
+                                    @include checkmark_elements($clear-orange, $white);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 377px) and (max-width: 551px) {
+    section#product-list {
+        padding: 8rem;
+        div.product-list {
+            div.row-products {
+                div.col-card {
+                    width: 20rem;
+                    .card {
+                        @include card_style($size - 1.2);
+                        @include card_elements();
+                        .card-body {
+                            @include card_body_style();
+
+                            label.container {
+                                text-align: left;
+
+                                .delete-checkbox {
+                                    @include delete_checkbox_style();
+                                    @include delete_checkbox_elements($blue);
+                                }
+                                
+                                .checkmark {
+                                    @include checkmark_style($clear-gray);
+                                    @include checkmark_elements($clear-orange, $white);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 552px) and (max-width: 615px) {
+    section#product-list {
+        padding: 8rem;
+        div.product-list {
+            div.row-products {
+                div.col-card {
+                    width: 10rem;
+                    .card {
+                        @include card_style($size - 1.2);
+                        @include card_elements();
+                        .card-body {
+                            @include card_body_style();
+
+                            label.container {
+                                text-align: left;
+
+                                .delete-checkbox {
+                                    @include delete_checkbox_style();
+                                    @include delete_checkbox_elements($blue);
+                                }
+                                
+                                .checkmark {
+                                    @include checkmark_style($clear-gray);
+                                    @include checkmark_elements($clear-orange, $white);                                                                        
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 616px) and (max-width: 769px) {
+    section#product-list {
+        padding: 8rem;
+        div.product-list {
+            div.row-products {
+                div.col-card {
+                    width: 8rem;
+                    .card {
+                        @include card_style($size - 1.2);
+                        @include card_elements();
+                        .card-body {
+                            @include card_body_style();
+
+                            label.container {
+                                text-align: left;
+
+                                .delete-checkbox {
+                                    @include delete_checkbox_style();
+                                    @include delete_checkbox_elements($blue);
+                                }
+                                
+                                .checkmark {
+                                    @include checkmark_style($clear-gray);
+                                    @include checkmark_elements($clear-orange, $white);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 770px) {
+    section#product-list {
+        padding: 8rem;
+        div.product-list {
+            div.row-products {
+                div.col-card {
+                    .card {
+                        @include card_style(null);
+                        @include card_elements();
+                        .card-body {
+                            @include card_body_style();
+
+                            label.container {
+                                text-align: left;
+
+                                .delete-checkbox {
+                                    @include delete_checkbox_style();
+                                    @include delete_checkbox_elements($blue);
+                                }
+                                
+                                .checkmark {
+                                    @include checkmark_style($clear-gray);
+                                    @include checkmark_elements($clear-orange, $white);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@import './variables';
+
+@mixin label_style($font-weight, $font-size: null) {
+    font-family: $font;
+    font-weight: $font-weight;
+    color: $blue;
+    font-size: $font-size;
+}
+
+@mixin section_style($width, $m-top, $l-padding, $m-bottom: null) {
+    width: $width;
+    margin-top: $m-top;
+    margin-bottom: $m-bottom;
+    padding-left: $l-padding;
+}
+
+@mixin input_style($width, $font-weight, $font-size: null) {
+    width: $width;
+    font-family: $font;
+    color: $blue;
+    font-weight: $font-weight;
+    border-color: $blue;
+    box-shadow: none;
+    font-size: $font-size;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 269px) {
+    section#addproduct-form {
+        @include section_style(auto, 6rem, 1rem, null);
+        div.product-form {
+            div.row-components {
+                label {
+                    @include label_style(600, calc($size/2));
+                }
+                input,select {
+                    @include input_style(13rem, 500, calc($size/2));
+
+                    &::placeholder {
+                        color: $blue;
+                    }
+
+                    &:hover {
+                        border: solid 1.5px $orange;
+                        outline: solid 1.5px $orange;
+                    }
+                    
+                }
+
+                .product-description {
+                    font-family: $font;
+                    color: $orange;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 419px) {
+    section#addproduct-form {
+        @include section_style(auto, 4rem, 3rem, null);
+        div.product-form {
+            div.row-components {
+                label {
+                    @include label_style(600, calc($size/2));
+                }
+                input,select {
+                    @include input_style(15rem, 500, calc($size/2));
+
+                    &::placeholder {
+                        color: $blue;
+                    }
+
+                    &:hover {
+                        border: solid 1.5px $orange;
+                        outline: solid 1.5px $orange;
+                    }
+                    
+                }
+
+                .product-description {
+                    font-family: $font;
+                    color: $orange;
+                }
+
+            }
+        
+        }
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 799px){
+    section#addproduct-form {
+        @include section_style(auto, 8rem, 6rem, 15rem);
+        div.product-form {
+            div.row-components {
+                label {
+                    @include label_style(600, null);
+                }
+                input,select {
+                    @include input_style(15rem, 500, null);
+
+                    &::placeholder {
+                        color: $blue;
+                    }
+
+                    &:hover {
+                        border: solid 1.5px $orange;
+                        outline: solid 1.5px $orange;
+                    }
+                    
+                }
+
+                .product-description {
+                    font-family: $font;
+                    color: $orange;
+                }
+
+            }
+        
+        }
+    }
+}
+
+@media only screen and (min-width: 800px){
+    section#addproduct-form {
+        @include section_style(auto, 8rem, 9rem, null);
+        div.product-form {
+            div.row-components {
+                label {
+                    @include label_style(600, null);
+                }
+                input,select {
+                    @include input_style(15rem, 500, null);
+
+                    &::placeholder {
+                        color: $blue;
+                    }
+
+                    &:hover {
+                        border: solid 1.5px $orange;
+                        outline: solid 1.5px $orange;
+                    }
+                    
+                }
+
+                .product-description {
+                    font-family: $font;
+                    color: $orange;
+                }
+
+            }
+        
+        }
+    }
+}

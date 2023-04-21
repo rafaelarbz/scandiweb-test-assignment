@@ -1,0 +1,617 @@
+html, body {
+  font-family: "Montserrat", sans-serife;
+  background-color: #FFFFFF;
+}
+html p.notifications, html .validation, body p.notifications, body .validation {
+  font-family: "Montserrat", sans-serife;
+  font-weight: 500;
+  color: #F39422;
+}
+
+@media screen and (min-width: 0px) {
+  nav {
+    align-content: space-between;
+    background-color: #010038;
+  }
+  nav a.navbar-brand {
+    font-family: "Montserrat", sans-serife;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+  }
+  nav a.nav-btn, nav input.nav-btn {
+    font-family: "Montserrat", sans-serife;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: solid 1px #FFFFFF;
+  }
+  nav a.nav-btn:hover, nav input.nav-btn:hover {
+    color: #F39422;
+    border: solid 1px #F39422;
+  }
+}
+@media screen and (min-width: 270px) {
+  nav {
+    align-content: space-between;
+    background-color: #010038;
+  }
+  nav a.navbar-brand {
+    font-family: "Montserrat", sans-serife;
+    color: #FFFFFF;
+    font-size: 1rem;
+  }
+  nav a.nav-btn, nav input.nav-btn {
+    font-family: "Montserrat", sans-serife;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: solid 1px #FFFFFF;
+  }
+  nav a.nav-btn:hover, nav input.nav-btn:hover {
+    color: #F39422;
+    border: solid 1px #F39422;
+  }
+}
+@media screen and (min-width: 420px) {
+  nav {
+    align-content: space-between;
+    background-color: #010038;
+  }
+  nav a.navbar-brand {
+    font-family: "Montserrat", sans-serife;
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+  nav a.nav-btn, nav input.nav-btn {
+    font-family: "Montserrat", sans-serife;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: solid 1px #FFFFFF;
+  }
+  nav a.nav-btn:hover, nav input.nav-btn:hover {
+    color: #F39422;
+    border: solid 1px #F39422;
+  }
+}
+@media screen and (min-width: 800px) {
+  nav {
+    align-content: space-between;
+    background-color: #010038;
+    padding: 8rem;
+  }
+  nav a.navbar-brand {
+    font-family: "Montserrat", sans-serife;
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+  nav a.nav-btn, nav input.nav-btn {
+    font-family: "Montserrat", sans-serife;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: solid 1px #FFFFFF;
+  }
+  nav a.nav-btn:hover, nav input.nav-btn:hover {
+    color: #F39422;
+    border: solid 1px #F39422;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 376px) {
+  section#product-list {
+    padding: 8rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card {
+    width: 20rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card {
+    font-size: 0.6rem;
+    font-family: "Montserrat", sans-serife;
+    align-content: left;
+    outline: solid 1px #293A80;
+    color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card:hover {
+    outline: solid 1px #F39422;
+    color: #F39422;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serife;
+    text-align: center;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container {
+    text-align: left;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark {
+    background-color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #e6e3e3;
+    border-radius: 4px;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark:hover {
+    background-color: #F5B567;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+@media only screen and (min-width: 377px) and (max-width: 551px) {
+  section#product-list {
+    padding: 8rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card {
+    width: 20rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card {
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serife;
+    align-content: left;
+    outline: solid 1px #293A80;
+    color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card:hover {
+    outline: solid 1px #F39422;
+    color: #F39422;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serife;
+    text-align: center;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container {
+    text-align: left;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark {
+    background-color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #e6e3e3;
+    border-radius: 4px;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark:hover {
+    background-color: #F5B567;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+@media only screen and (min-width: 552px) and (max-width: 615px) {
+  section#product-list {
+    padding: 8rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card {
+    width: 10rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card {
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serife;
+    align-content: left;
+    outline: solid 1px #293A80;
+    color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card:hover {
+    outline: solid 1px #F39422;
+    color: #F39422;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serife;
+    text-align: center;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container {
+    text-align: left;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark {
+    background-color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #e6e3e3;
+    border-radius: 4px;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark:hover {
+    background-color: #F5B567;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+@media only screen and (min-width: 616px) and (max-width: 769px) {
+  section#product-list {
+    padding: 8rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card {
+    width: 8rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card {
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serife;
+    align-content: left;
+    outline: solid 1px #293A80;
+    color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card:hover {
+    outline: solid 1px #F39422;
+    color: #F39422;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serife;
+    text-align: center;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container {
+    text-align: left;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark {
+    background-color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #e6e3e3;
+    border-radius: 4px;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark:hover {
+    background-color: #F5B567;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+@media screen and (min-width: 770px) {
+  section#product-list {
+    padding: 8rem;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card {
+    font-family: "Montserrat", sans-serife;
+    align-content: left;
+    outline: solid 1px #293A80;
+    color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card:hover {
+    outline: solid 1px #F39422;
+    color: #F39422;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serife;
+    text-align: center;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container {
+    text-align: left;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark {
+    background-color: #293A80;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .delete-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #e6e3e3;
+    border-radius: 4px;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark:hover {
+    background-color: #F5B567;
+  }
+  section#product-list div.product-list div.row-products div.col-card .card .card-body label.container .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 269px) {
+  section#addproduct-form {
+    width: auto;
+    margin-top: 6rem;
+    padding-left: 1rem;
+  }
+  section#addproduct-form div.product-form div.row-components label {
+    font-family: "Montserrat", sans-serife;
+    font-weight: 600;
+    color: #293A80;
+    font-size: 1rem;
+  }
+  section#addproduct-form div.product-form div.row-components input, section#addproduct-form div.product-form div.row-components select {
+    width: 13rem;
+    font-family: "Montserrat", sans-serife;
+    color: #293A80;
+    font-weight: 500;
+    border-color: #293A80;
+    box-shadow: none;
+    font-size: 1rem;
+  }
+  section#addproduct-form div.product-form div.row-components input::-moz-placeholder, section#addproduct-form div.product-form div.row-components select::-moz-placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input::placeholder, section#addproduct-form div.product-form div.row-components select::placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input:hover, section#addproduct-form div.product-form div.row-components select:hover {
+    border: solid 1.5px #F39422;
+    outline: solid 1.5px #F39422;
+  }
+  section#addproduct-form div.product-form div.row-components .product-description {
+    font-family: "Montserrat", sans-serife;
+    color: #F39422;
+  }
+}
+@media only screen and (min-width: 270px) and (max-width: 419px) {
+  section#addproduct-form {
+    width: auto;
+    margin-top: 4rem;
+    padding-left: 3rem;
+  }
+  section#addproduct-form div.product-form div.row-components label {
+    font-family: "Montserrat", sans-serife;
+    font-weight: 600;
+    color: #293A80;
+    font-size: 1rem;
+  }
+  section#addproduct-form div.product-form div.row-components input, section#addproduct-form div.product-form div.row-components select {
+    width: 15rem;
+    font-family: "Montserrat", sans-serife;
+    color: #293A80;
+    font-weight: 500;
+    border-color: #293A80;
+    box-shadow: none;
+    font-size: 1rem;
+  }
+  section#addproduct-form div.product-form div.row-components input::-moz-placeholder, section#addproduct-form div.product-form div.row-components select::-moz-placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input::placeholder, section#addproduct-form div.product-form div.row-components select::placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input:hover, section#addproduct-form div.product-form div.row-components select:hover {
+    border: solid 1.5px #F39422;
+    outline: solid 1.5px #F39422;
+  }
+  section#addproduct-form div.product-form div.row-components .product-description {
+    font-family: "Montserrat", sans-serife;
+    color: #F39422;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 799px) {
+  section#addproduct-form {
+    width: auto;
+    margin-top: 8rem;
+    margin-bottom: 15rem;
+    padding-left: 6rem;
+  }
+  section#addproduct-form div.product-form div.row-components label {
+    font-family: "Montserrat", sans-serife;
+    font-weight: 600;
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input, section#addproduct-form div.product-form div.row-components select {
+    width: 15rem;
+    font-family: "Montserrat", sans-serife;
+    color: #293A80;
+    font-weight: 500;
+    border-color: #293A80;
+    box-shadow: none;
+  }
+  section#addproduct-form div.product-form div.row-components input::-moz-placeholder, section#addproduct-form div.product-form div.row-components select::-moz-placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input::placeholder, section#addproduct-form div.product-form div.row-components select::placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input:hover, section#addproduct-form div.product-form div.row-components select:hover {
+    border: solid 1.5px #F39422;
+    outline: solid 1.5px #F39422;
+  }
+  section#addproduct-form div.product-form div.row-components .product-description {
+    font-family: "Montserrat", sans-serife;
+    color: #F39422;
+  }
+}
+@media only screen and (min-width: 800px) {
+  section#addproduct-form {
+    width: auto;
+    margin-top: 8rem;
+    padding-left: 9rem;
+  }
+  section#addproduct-form div.product-form div.row-components label {
+    font-family: "Montserrat", sans-serife;
+    font-weight: 600;
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input, section#addproduct-form div.product-form div.row-components select {
+    width: 15rem;
+    font-family: "Montserrat", sans-serife;
+    color: #293A80;
+    font-weight: 500;
+    border-color: #293A80;
+    box-shadow: none;
+  }
+  section#addproduct-form div.product-form div.row-components input::-moz-placeholder, section#addproduct-form div.product-form div.row-components select::-moz-placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input::placeholder, section#addproduct-form div.product-form div.row-components select::placeholder {
+    color: #293A80;
+  }
+  section#addproduct-form div.product-form div.row-components input:hover, section#addproduct-form div.product-form div.row-components select:hover {
+    border: solid 1.5px #F39422;
+    outline: solid 1.5px #F39422;
+  }
+  section#addproduct-form div.product-form div.row-components .product-description {
+    font-family: "Montserrat", sans-serife;
+    color: #F39422;
+  }
+}
+@media screen and (min-width: 0px) {
+  footer {
+    position: sticky;
+    bottom: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  footer p {
+    text-align: center;
+    font-family: "Montserrat", sans-serife;
+    font-size: 0.8rem;
+    color: #010038;
+    opacity: 0.5;
+  }
+  footer hr {
+    color: #010038;
+    border: 0.05rem solid #010038;
+  }
+}
+@media screen and (min-width: 270px) {
+  footer {
+    position: sticky;
+    bottom: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  footer p {
+    text-align: center;
+    font-family: "Montserrat", sans-serife;
+    font-size: 1rem;
+    color: #010038;
+    opacity: 0.5;
+  }
+  footer hr {
+    color: #010038;
+    border: 0.05rem solid #010038;
+  }
+}
+@media screen and (min-width: 770px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  footer p {
+    text-align: center;
+    font-family: "Montserrat", sans-serife;
+    font-size: 1.4rem;
+    color: #010038;
+    opacity: 0.5;
+  }
+  footer hr {
+    color: #010038;
+    border: 0.1rem solid #010038;
+  }
+}/*# sourceMappingURL=style.css.map */

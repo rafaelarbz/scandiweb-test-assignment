@@ -1,0 +1,13 @@
+CREATE DATABASE scandiweb;
+
+USE scandiweb;
+
+CREATE TABLE products (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+sku VARCHAR(255) NOT NULL UNIQUE,  
+name VARCHAR(255) NOT NULL, 
+price DECIMAL(20,2) NOT NULL,
+product_type VARCHAR(255) NOT NULL,
+size_mb INT(20), 
+weight_kg DECIMAL(20,2), 
+dimensions_cm TEXT);
