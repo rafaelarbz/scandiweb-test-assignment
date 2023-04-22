@@ -8,13 +8,9 @@ include_once('db_connection.php');
 if(isset($_POST['deleteId'])) {
     $ids = implode(',', $_POST['deleteId']);
 
-    if ($ids == null) {
-        echo json_encode(array("success" => "false", "error" => "No product selected!"));
-    }
-
     echo deleteProduct($ids);
 }else{
-    echo json_encode(array("success" => "false", "error" => "No product selected!"));
+    echo json_encode(array("success" => "false", "error" => "Request failed!"));
 }
 
 function deleteProduct($ids) {
