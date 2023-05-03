@@ -9,5 +9,3 @@
 * MySQL
 * Bootstrap
 * SASS
-
-#### 🚀 To see the result [click here!](https://scandiweb-rafaela.000webhostapp.com/public/index.php)
